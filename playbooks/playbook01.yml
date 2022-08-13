@@ -1,0 +1,20 @@
+----
+# Playbook 01 - Intro to the Acme Bank
+- name: A playbook for Acme Outer Space Bank
+  hosts: localhost
+  gather_facts: false       # YAML generally accepts false, no, n all the same way
+  
+  tasks:
+  - name: A simple task that can be used for testing
+    debug:
+        msg: "Welcome to the Acme Outer Space Bank playbook"
+        
+  - name: Make a URL request to determine our potential customer base (folks in space)
+    uri:
+        url: http://api.open-notify.org/astros.json
+        method: GET
+    register: results
+    
+  - name: Display the results
+    debug:
+        var: results
