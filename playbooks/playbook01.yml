@@ -1,13 +1,13 @@
 ----
-# Playbook 01 - Intro to the Acme Bank
-- name: A playbook for Acme Outer Space Bank
+# Playbook 01 - Intro to the Acme Intergalatic Savings and Loan
+- name: A playbook for Acme Intergalatic Savings and Loan
   hosts: localhost
   gather_facts: false       # YAML generally accepts false, no, n all the same way
   
   tasks:
   - name: A simple task that can be used for testing
     debug:
-        msg: "Welcome to the Acme Outer Space Bank playbook"
+        msg: "Welcome to the Acme Intergalatic Savings and Loan playbook"
         
   - name: Make a URL request to determine our potential customer base (folks in space)
     uri:
