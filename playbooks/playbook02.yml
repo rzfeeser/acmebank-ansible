@@ -1,0 +1,28 @@
+---
+- name: Acme Intergalatic Space Bank and Loan
+  hosts: localhost  # target ourselves
+  connection: local # we do not want to SSH anywhere. Run these actions locally
+  gather_facts: no  # no need to gather_facts about ourselves (defines ansible_facts)
+
+  tasks:
+    # the 'register' keyword saves the response sent back to the uri module
+    - name: Access the current location of the ISS
+      uri:
+        method: GET # send an HTTP GET to the location defined by param "url" (default)
+        url: "http://api.open-notify.org/iss-now.json"
+        status_code: 200 # default is 200
+        # return_content: true
+      register: results  # save the "response" (defines the var results)
+
+    - name: "Getting at JSON"
+      debug:   # the debug module prints to the screen
+              var: results.json.iss_position
+
+    - name: create some new variables
+      set_fact:
+              lat: "{{ results.json.iss_position.latitude }}"
+              lon: "{{ results.json.iss_position.longitude }}"
+
+    - name: display lat and lon
+      debug:
+              msg: "The longitude of the ISS is {{ lon }} and the latitude of the ISS is {{ lat }}"
