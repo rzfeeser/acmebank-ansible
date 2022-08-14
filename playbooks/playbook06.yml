@@ -1,0 +1,22 @@
+# Playbook 06 - Acme Intergalatic Savings and Loan tracking various space websites
+---
+- name: Space Infastructure for the Acme Intergalatic Savings and Loan checking on partner connectivity
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  
+  vars:
+      # add additional sites to the list sitestocheck
+      # all sites in the list are sent an HTTP GET and expect an HTTP 200 response
+      sitestocheck:
+          - "http://example.org"
+          - "http://example.com"
+
+  tasks:
+      # this task will fail if any non-200 responses are generated
+      # non-200 responses would indicate a inability to reach the site with an HTTP GET
+      - name: Check that partners sites can be contacted
+        uri:
+            method: GET
+            url: "{{ item }}"
+        loop: "{{ sitestocheck }}"
