@@ -27,3 +27,8 @@
     - name: display lat and lon
       debug:
               msg: "The longitude of the ISS is {{ lon }} and the latitude of the ISS is {{ lat }}"
+
+    - name: Ground control is messaging with
+      debug:
+          var: "{{ majortom }}"
+      when: majortom   # if majortom has a value, display that value
