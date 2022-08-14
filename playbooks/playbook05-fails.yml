@@ -1,0 +1,15 @@
+# Playbook 05 - Acme Intergalatic Savings and Loan a playbook that will always fail
+---
+- name: Space Infastructure for the Acme Intergalatic Savings and Loan tracking NASA APOD
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+      - name: Create a failure
+        command: /bin/false      # returns a fail
+        
+      - name: Lookup our NASA APOD API
+        uri:
+            method: GET
+            url: "https://example.com"
