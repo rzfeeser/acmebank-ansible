@@ -30,5 +30,5 @@
 
     - name: groundcontrol is mapped to
       debug:
-              var: "{{ groundcontrol }}"
+              var: groundcontrol
       when: groundcontrol   # if majortom has a value, display that value
