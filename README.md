@@ -8,7 +8,7 @@ The repository contains automatinos and coded solutions for the **Acme Intergala
 
 
 ## About
-This repository is one of many used in conjunction with Alta3 Research's Ansible Tower / AWX Training program. If you're interesting in Ansible, Tower or AWX training, contact [https://alta3.com](https://alta3.com)
+This repository is one of many used in conjunction with Alta3 Research's Ansible Tower / AWX Training program. If you're interesting in Ansible, Tower or AWX training, feel free to contact us [https://alta3.com](https://alta3.com)
 
 ## Author
 Created and maintained by @RZFeeser
