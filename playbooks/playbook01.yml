@@ -1,4 +1,4 @@
-----
+---
 # Playbook 01 - Intro to the Acme Intergalatic Savings and Loan
 - name: A playbook for Acme Intergalatic Savings and Loan
   hosts: localhost
