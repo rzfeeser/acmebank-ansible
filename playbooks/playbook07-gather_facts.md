@@ -1,0 +1,10 @@
+---
+# Playbook 07 - Gathering Facts on a Target for the Acme Intergalatic Savings and Loan
+- name: A playbook for Acme Intergalatic Savings and Loan
+  hosts: all
+  gather_facts: true       # YAML generally accepts true, yes, y all the same way
+  
+  tasks:
+  - name: A simple task that can be used for testing
+    debug:
+        var: ansible_facts
