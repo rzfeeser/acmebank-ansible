@@ -1,0 +1,16 @@
+---
+# Playbook 08 - Create a directory in the user's home directory
+- name: Create a directory called ansible-made-this
+  hosts: all
+  gather_facts: true
+
+  tasks:
+    - name: Ensure the directory ~/ansible-made-this exists
+      ansible.builtin.file:
+        path: "{{ ansible_env.HOME }}/ansible-made-this"
+        state: directory
+        mode: '0755'
+
+    - name: Confirm directory creation
+      ansible.builtin.debug:
+        msg: "The directory {{ ansible_env.HOME }}/ansible-made-this has been created or already exists."
