@@ -1,0 +1,9 @@
+- name: a simple playbook that prints to the screen
+  hosts: all   # this is typical aap playbook design
+  gather_facts: false   # not using
+  connection: ansible.builtin.local  # debug, sdk (http operations)
+
+  tasks:
+  - name: print to the screen
+    ansible.builtin.debug:
+       msg: "intro to aap"
