@@ -5,7 +5,12 @@ The repository contains automatinos and coded solutions for the **Acme Intergala
 - `playbook01.yml` - A simple playbook that makes an API call to [http://api.open-notify.org/astros.json](http://api.open-notify.org/astros.json). Results are pushed to standard out with `debug`
 - `playbook02.yml` - A simple playbook that makes an API call to [http://api.open-notify.org/iss-now.json](http://api.open-notify.org/iss-now.json). Results are pushed to standard out with `debug`
 - `playbook03.yml` - A simple playbook that makes an API call to [api.nasa.gov](api.nasa.gov). Requires an API key to work properly. Set verbosity on `debug` at 1 or above to obtain output.
-- `playbook04` - A simple playbook that saves a picture from NASA. 
+- `playbook04-artifact.yml` - A simple playbook that saves a picture from NASA. 
+ - `playbook05-fails.yml` - An example playbook that intentionally demonstrates failing tasks to show error handling and retries.
+ - `playbook06.yml` - A playbook demonstrating common configuration tasks and idempotence for testing standard Ansible behaviors.
+ - `playbook07-gather_facts.yml` - Demonstrates fact gathering and how to consume gathered facts within tasks and conditionals.
+ - `playbook08.yml` - Shows conditional execution, loops, and task registration patterns used in real playbooks.
+ - `playbook09_debug.yml` - Demonstrates the `debug` module and uses variables from `vars/playbook09_debug_vars.yml` to illustrate variable handling.
 
 
 ## About
