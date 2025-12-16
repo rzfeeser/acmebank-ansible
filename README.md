@@ -9,7 +9,7 @@ The repository contains automatinos and coded solutions for the **Acme Intergala
  - `playbook05-fails.yml` - An example playbook that intentionally demonstrates failing tasks to show error handling and retries.
  - `playbook06.yml` - A playbook demonstrating common configuration tasks and idempotence for testing standard Ansible behaviors.
  - `playbook07-gather_facts.yml` - Demonstrates fact gathering and how to consume gathered facts within tasks and conditionals.
- - `playbook08.yml` - Shows conditional execution, loops, and task registration patterns used in real playbooks.
+ - `playbook08.yml` - Creates a folder on a target host, used to demo SSH.
  - `playbook09_debug.yml` - Demonstrates the `debug` module and uses variables from `vars/playbook09_debug_vars.yml` to illustrate variable handling.
 
 
