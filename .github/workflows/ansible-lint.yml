@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Run ansible-lint on a specific directory
       # It is recommended to pin the action to a specific version tag (e.g., v6)
