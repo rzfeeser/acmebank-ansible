@@ -22,7 +22,7 @@ The repository contains Ansible automations and coded solutions for the **Acme I
 
 
 ## About
-This repository is one of many used in conjunction with Alta3 Research's Ansible Tower / AWX Training program. If you're interesting in Ansible, Tower or AWX training, feel free to contact us [https://alta3.com](https://alta3.com)
+
 
 ## Author
 Created and maintained by @RZFeeser
