@@ -2,22 +2,22 @@
 ---
 - name: Space Infastructure for the Acme Intergalatic Savings and Loan tracking NASA APOD
   hosts: localhost
-  connection: local
+  connection: ansible.builtin.local
   gather_facts: false
 
   tasks:
       - name: Lookup our NASA APOD API
-        uri:
+        ansible.builtin.uri:
             method: GET
             url: "https://api.nasa.gov/planetary/apod?api_key={{ apikey }}"   # apikey can be set to DEMO_KEY or you can register for a key at
         register: results                                                     # api.nasa.gov
 
       - name: Check out the results
-        debug:
+        ansible.builtin.debug:
             verbosity: 1 # 1 to 5  -- how many "-v" flags do we need to see this?
             var: results.json.hdurl
 
       - name: Download file (generating an artifact)
-        get_url:
+        ansible.builtin.get_url:
           url: "{{ results.json.hdurl }}"
           dest: ~/static/2022-05-17-nasa_hdurl.jpg
