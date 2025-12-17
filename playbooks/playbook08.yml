@@ -2,6 +2,7 @@
 # Playbook 08 - Create a directory in the user's home directory
 - name: Create a directory called ansible-made-this
   hosts: all   # target everything within the inventory
+  connection: ansible.builtin.ssh
   gather_facts: true
 
   tasks:
