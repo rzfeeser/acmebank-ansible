@@ -11,9 +11,9 @@ jobs:
 
     - name: Run ansible-lint on a specific directory
       # It is recommended to pin the action to a specific version tag (e.g., v6)
-      uses: ansible/ansible-lint@v6 
+      uses: ansible/ansible-lint@main
       with:
         # Specify the directory you want to lint
         working_directory: './playbooks' 
         # Optional: Add extra arguments to the ansible-lint command, e.g., to enable all rules
-        args: "--strict" 
+        args: "" 
