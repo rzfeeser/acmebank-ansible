@@ -2,7 +2,7 @@
 ---
 - name: Space Infastructure for the Acme Intergalatic Savings and Loan checking on partner connectivity
   hosts: localhost
-  connection: local
+  connection: ansible.builtin.local
   gather_facts: false
   
   vars:
@@ -16,7 +16,7 @@
       # this task will fail if any non-200 responses are generated
       # non-200 responses would indicate a inability to reach the site with an HTTP GET
       - name: Check that partners sites can be contacted
-        uri:
+        ansible.builtin.uri:
             method: GET
             url: "{{ item }}"
         loop: "{{ sitestocheck }}"
