@@ -1,5 +1,13 @@
-# acmebank-ansible
-The repository contains automatinos and coded solutions for the **Acme Intergalatic Savings and Loan**. Established in 2022, it is the first interplanetary financial organization built for those persons traveling the cosmos. 
+# Acme Bank InterGalactic Savings and Loan - Ansible Automations
+Author: Russell Zachary Feeser  
+GitHub: @RZFeeser  
+ Email: rzfeeser@users.noreply.github.com  
+Galaxy: https://galaxy.ansible.com/rzfeeser/acmebank-ansible
+
+![Acme Bank](https://github.com/rzfeeser/acmebank-ansible/blob/main/docs/images/acmebank-ansible.png?raw=true)
+
+The repository contains Ansible automations and coded solutions for the **Acme Intergalatic Savings and Loan**. Established in 2022, it is the first interplanetary financial organization built for those persons traveling the cosmos. 
+
 
 ## playbooks/
 - `playbook01.yml` - A simple playbook that makes an API call to [http://api.open-notify.org/astros.json](http://api.open-notify.org/astros.json). Results are pushed to standard out with `debug`
