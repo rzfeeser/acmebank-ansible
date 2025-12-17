@@ -3,7 +3,7 @@
 - name: Space Infastructure Acme Intergalatic Space Bank and Loan
   hosts: localhost  # target ourselves
   connection: ansible.builtin.local # we do not want to SSH anywhere. Run these actions locally
-  gather_facts: no  # no need to gather_facts about ourselves (defines ansible_facts)
+  gather_facts: false  # no need to gather_facts about ourselves (defines ansible_facts)
   vars:
     groundcontrol: false    # this defines groundcontrol as a bool
 
