@@ -6,13 +6,13 @@
   gather_facts: false
 
   tasks:
-      - name: Lookup our NASA APOD API
-        ansible.builtin.uri:
-          method: GET
-          url: "https://api.nasa.gov/planetary/apod?api_key={{ apikey }}"   # apikey can be set to DEMO_KEY or you can register for a key at
-        register: results                                                     # api.nasa.gov
+    - name: Lookup our NASA APOD API
+      ansible.builtin.uri:
+        method: GET
+        url: "https://api.nasa.gov/planetary/apod?api_key={{ apikey }}"   # apikey can be set to DEMO_KEY or you can register for a key at
+      register: results                                                     # api.nasa.gov
 
-      - name: Check out the results
-        ansible.builtin.debug:
-          verbosity: 1 # 1 to 5  -- how many "-v" flags do we need to see this?
-          var: results.json.hdurl
+    - name: Check out the results
+      ansible.builtin.debug:
+        verbosity: 1 # 1 to 5  -- how many "-v" flags do we need to see this?
+        var: results.json.hdurl
