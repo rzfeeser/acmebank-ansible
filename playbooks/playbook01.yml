@@ -1,21 +1,21 @@
 ---
 # Playbook 01 - Intro to the Acme Intergalatic Savings and Loan
-- name: A playbook for Acme Intergalatic Savings and Loan
-  hosts: all                          # runs against anything defined by the inventory 
+- name: Customer identification playbook
+  hosts: all                          # runs against anything defined by the inventory
   connection: ansible.builtin.local   # this prevents SSH to itself
   gather_facts: false       # YAML generally accepts false, no, n all the same way
   
   tasks:
   - name: A simple task that can be used for testing
-    debug:
+    ansible.builtin.debug:
         msg: "Welcome to the Acme Intergalatic Savings and Loan playbook"
         
-  - name: Make a URL request to determine our potential customer base (folks in space)
-    uri:
+  - name: Make a request to determine our potential customer base (folks in space)
+    ansible.builtin.uri:
         url: http://api.open-notify.org/astros.json
         method: GET
     register: results
     
   - name: Display the results
-    debug:
+    ansible.builtin.debug:
         var: results
