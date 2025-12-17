@@ -7,12 +7,12 @@
   tasks:
     - name: A simple task that can be used for testing
       ansible.builtin.debug:
-          msg: "Welcome to the Acme Intergalatic Savings and Loan playbook"
+        msg: "Welcome to the Acme Intergalatic Savings and Loan playbook"
     - name: Make a request to determine our potential customer base (folks in space)
       ansible.builtin.uri:
-          url: http://api.open-notify.org/astros.json
-          method: GET
+        url: http://api.open-notify.org/astros.json
+        method: GET
       register: results
     - name: Display the results
       ansible.builtin.debug:
-          var: results
+        var: results
