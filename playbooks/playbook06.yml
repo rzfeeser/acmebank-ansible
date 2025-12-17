@@ -4,7 +4,7 @@
   hosts: localhost
   connection: ansible.builtin.local
   gather_facts: false
-  
+
   vars:
       # add additional sites to the list sitestocheck
       # all sites in the list are sent an HTTP GET and expect an HTTP 200 response
