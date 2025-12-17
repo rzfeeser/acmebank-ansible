@@ -3,8 +3,8 @@
 - name: A playbook for Acme Intergalatic Savings and Loan
   hosts: all
   gather_facts: true       # YAML generally accepts true, yes, y all the same way
-  
+
   tasks:
   - name: A simple task that can be used for testing
-    debug:
+    ansible.builtin.debug:
         var: ansible_facts
