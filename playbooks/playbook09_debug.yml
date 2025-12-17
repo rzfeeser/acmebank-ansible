@@ -1,4 +1,4 @@
-- name: a simple playbook that prints to the screen
+- name: A simple playbook that prints to the screen
   hosts: all   # this is typical aap playbook design
   gather_facts: false   # not using
   connection: ansible.builtin.local  # debug, sdk (http operations)
@@ -7,10 +7,10 @@
   - vars/playbook09_debug_vars.yml
 
   tasks:
-  - name: print to the screen
+  - name: Print to the screen
     ansible.builtin.debug:
        msg: "intro to aap"
 
-  - name: print var from our var file
+  - name: Print var from our var file
     ansible.builtin.debug:
        var: acmebank_var
