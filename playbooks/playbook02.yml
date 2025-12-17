@@ -21,12 +21,12 @@
       ansible.builtin.debug:   # the debug module prints to the screen
         var: results.json.iss_position
 
-    - name: create some new variables
+    - name: Create some new variables
       ansible.builtin.set_fact:
         lat: "{{ results.json.iss_position.latitude }}"
         lon: "{{ results.json.iss_position.longitude }}"
 
-    - name: display lat and lon
+    - name: Display lat and lon
       ansible.builtin.debug:
         msg: "The longitude of the ISS is {{ lon }} and the latitude of the ISS is {{ lat }}"
       when: groundcontrol
