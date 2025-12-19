@@ -4,7 +4,7 @@
   connection: ansible.builtin.local  # debug, sdk (http operations)
 
   vars_files:
-  - vars/playbook09_debug_vars.yml
+    - vars/playbook09_debug_vars.yml
 
   tasks:
   - name: Print to the screen
