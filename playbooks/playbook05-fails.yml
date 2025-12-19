@@ -8,7 +8,7 @@
   tasks:
     - name: Create a failure
       ansible.builtin.command: /bin/false      # returns a fail
-      
+
     - name: Lookup our NASA APOD API
       ansible.builtin.uri:
         method: GET
