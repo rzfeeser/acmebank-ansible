@@ -1,7 +1,7 @@
 # Acme Bank InterGalactic Savings and Loan - Ansible Automations
 Author: Russell Zachary Feeser  
 GitHub: @RZFeeser  
- Email: rzfeeser@users.noreply.github.com  
+Email: rzfeeser@users.noreply.github.com  
 Galaxy: https://galaxy.ansible.com/rzfeeser/acmebank-ansible
 
 ![Acme Bank](https://github.com/rzfeeser/acmebank-ansible/blob/main/docs/images/acmebank-ansible.png?raw=true)
