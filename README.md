@@ -27,5 +27,5 @@ The repository contains Ansible automations and coded solutions for the **Acme I
 
 ### About the Author
 Russell Zachary Feeser (@RZFeeser) is the owner of [IRIS7](https://iris7.com), which provides consultantcy services, and professional training across various technologies including Ansible, Python, AWX/Tower/AAP, Terraform, Go, Cloud Hyperscalering (Azure, AWS, GCI), 5G and core telecom communications. If you're interested in discussing a consulting or training project, feel free to reach out.  
-- https://iris7.com
+- [https://iris7.com](https://iris7.com)
 - https://rzfeeser.com
